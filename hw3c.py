@@ -103,12 +103,12 @@ def main():
 
     #system #1:
     x1, method1=solve_system(A1,b1)
-    print("\nSystem #1:", x1)
+    print("\nSystem #1:", [round(i, 3) for i in x1])
     print("Method used:", method1)
 
     #system #2:
     x2,method2=solve_system(A2,b2)
-    print("\nSystem #2:", x2)
+    print("\nSystem #2:", [round(i, 3) for i in x2])
     print("Method used:", method2)
 
     #verify solutions:
