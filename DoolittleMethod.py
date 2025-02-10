@@ -82,7 +82,7 @@ def Doolittle(Aaug):
     B=mo.MatrixMultiply(L,U)
     y=BackSolve(L,b, UT=False)
     x=BackSolve(U,y, UT=True)
-    return [row[0] for row in x]  # Ensure x is returned as a list  #x should be a column vector of form [[], [], [], ..., []]
+    return x, "Doolittle"
 
 def main():
     A=[[3, 5, 2],[0,8,2],[6,2,8]]

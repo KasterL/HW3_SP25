@@ -80,8 +80,7 @@ def solve_system(A,b):
     else:
         method= "Doolittle"
         augmented_matrix= [A[i] + [b[i]]for i in range (len(A))]
-        x= Doolittle(augmented_matrix)
-        x= [row[0]for row in x]
+        x, _ = Doolittle(augmented_matrix)
     return x, method
 
 def main():
